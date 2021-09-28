@@ -20,6 +20,8 @@ app.post("/api", function (req, res) {
 
 app.use("/send", require("./routes/send"));
 
+app.use("/show", require("./routes/show"));
+
 app.get("*", function (req, res) {
   res.redirect("/");
 });
