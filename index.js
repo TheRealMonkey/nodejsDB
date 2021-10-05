@@ -13,6 +13,7 @@ app.locals.db.run(
   "CREATE TABLE IF NOT EXISTS form( fID TEXT, fCode TEXT, fA TEXT, fA0 TEXT, fA1 TEXT, fA2 TEXT, fA3 TEXT, fB TEXT, fB0 TEXT, fB1 TEXT, fB2 TEXT, fB3 TEXT, fC TEXT, fC0 TEXT, fC1 TEXT, fC2 TEXT, fC3 TEXT)"
 );
 
+
 app.post("/api", function (req, res) {
   console.log(req.body.name, req.body.email, req.body.message);
   res.send("hey");
