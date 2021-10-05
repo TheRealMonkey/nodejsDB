@@ -15,6 +15,7 @@ router.post("/", function (req, res, next) {
                     return console.log(err.message);
                 }
                 console.log("new form added");
+                res.status(200).redirect("/")
             })
     })
 })
